@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fast AC Repair</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      min-height:100vh;
+      color:#fff;
+      background:
+        linear-gradient(135deg,rgba(8,55,82,.94),rgba(88,174,210,.78)),
+        radial-gradient(circle at 80% 20%,#dff7ff 0,transparent 35%),
+        #5ba8c9;
+      overflow-x:hidden;
+    }
+    .page{
+      min-height:100vh;
+      position:relative;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px 20px;
+    }
+    .snow{
+      position:absolute;inset:auto 0 0;height:30%;
+      background:linear-gradient(to top,rgba(230,246,251,.55),transparent);
+      pointer-events:none;
+    }
+    .card{
+      width:min(1180px,100%);
+      min-height:700px;
+      position:relative;
+      overflow:hidden;
+      border-radius:6px;
+      background:linear-gradient(120deg,rgba(8,67,101,.92),rgba(72,158,196,.72));
+      box-shadow:0 25px 80px rgba(0,0,0,.25);
+      display:flex;
+      flex-direction:column;
+    }
+    header{
+      height:72px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 42px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .brand{font-size:22px;font-weight:700;display:flex;gap:10px;align-items:center}
+    .brand span{font-size:28px}
+    .phone{font-weight:700;opacity:.95}
+    .hero{
+      flex:1;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:50px 30px 90px;
+      position:relative;
+    }
+    .content{max-width:900px;z-index:2}
+    .ac{
+      width:min(620px,90vw);
+      margin:0 auto 28px;
+      filter:drop-shadow(0 18px 20px rgba(0,0,0,.22));
+      border-radius:10px;
+    }
+    h1{
+      font-size:clamp(42px,6vw,72px);
+      line-height:1.05;
+      margin-bottom:18px;
+      letter-spacing:-2px;
+    }
+    p{
+      font-size:17px;
+      line-height:1.6;
+      opacity:.9;
+      margin:0 auto 30px;
+    }
+    .buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+    a{
+      text-decoration:none;
+      padding:15px 28px;
+      border-radius:999px;
+      font-weight:700;
+      display:inline-block;
+      transition:.2s;
+    }
+    .primary{background:#fff;color:#1c718f}
+    .secondary{border:1px solid rgba(255,255,255,.45);color:#fff;background:rgba(255,255,255,.08)}
+    a:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,0,0,.18)}
+    .wa{background:#25D366;color:#fff}
+    footer{
+      padding:18px 30px;
+      text-align:center;
+      font-size:12px;
+      opacity:.75;
+    }
+    @media(max-width:650px){
+      header{padding:0 18px}
+      .phone{font-size:12px}
+      .card{min-height:100vh;border-radius:0}
+      .hero{padding-top:30px}
+      h1{letter-spacing:-1px}
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      <header>
+        <div class="brand"><span>❄</span> CoolFix</div>
+        <div class="phone">+91 63947 98318</div>
+      </header>
+
+      <main class="hero">
+        <div class="content">
+          <img class="ac" src="ac-unit.png" alt="Air conditioner">
+          <h1>Fast AC Repair — When You Need It Most.</h1>
+          <p>Same-day service. Certified technicians.<br>100% satisfaction promise.</p>
+
+          <div class="buttons">
+            <a class="primary" href="https://wa.me/916394798318" target="_blank" rel="noopener">
+              Book a Repair
+            </a>
+            <a class="wa" href="https://wa.me/916394798318?text=Hello%2C%20I%20need%20AC%20repair%20service." target="_blank" rel="noopener">
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <footer>Professional AC repair & maintenance service</footer>
+    </div>
+    <div class="snow"></div>
+  </div>
+</body>
+</html>
